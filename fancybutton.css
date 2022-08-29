@@ -3,14 +3,14 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #151b29;
+    background-color: #0a2028;
 }
-
 button {
     font-family: 'Josefin Sans', sans-serif;
     background: none;
-    color: #47e0e0;
+    color: #55e9e9;
     border: 2px solid;
+    border-radius: 10px;
     padding: 1em 2em;
     font-size: 1em;
     transition: color 0.2s, border-color 0.2s, box-shadow 0.2s, transform 0.2s;
@@ -18,8 +18,15 @@ button {
 
 button:hover {
     border-color: #f9c5e8;
-    color: pink;
+    color: rgb(255, 228, 233);
     box-shadow: 0 0.5em 0.5em -0.3em #f9c5e8;
     transform: translateY(-0.25em);
     cursor: pointer;
+}
+
+button:active {
+    border-color: #a7f0f5;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0.5em 0.5em -0.3em #a7f0f5;
+    background-color: #12333f
 }
