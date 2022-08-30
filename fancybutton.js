@@ -1,13 +1,16 @@
 const button = document.querySelector('button');
 
 function generateRandomColor() {
-    let r = Math.floor(Math.random() * 256);
-    let g = Math.floor(Math.random() * 256);
-    let b = Math.floor(Math.random() * 256);
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
     return `rgb(${r}, ${g}, ${b})`;
 }
+function generateGradient() {
+  const firstColor = generateRandomColor();
+  const secondColor = generateRandomColor();
+  const randomGradient = `linear-gradient(to bottom, ${firstColor}, ${secondColor})`
+  document.body.style.background = randomGradient;
+}
 
-button.addEventListener("click", function () {
-    const randomColor = generateRandomColor();
-    document.body.style.backgroundColor = randomColor;
-})
+button.addEventListener("click", generateGradient);
