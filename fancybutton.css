@@ -7,7 +7,7 @@ body {
 }
 button {
     font-family: 'Josefin Sans', sans-serif;
-    background: none;
+    background: #0a2028;
     color: #55e9e9;
     border: 2px solid;
     border-radius: 10px;
@@ -28,5 +28,5 @@ button:active {
     border-color: #a7f0f5;
     color: rgb(255, 255, 255);
     box-shadow: 0 0.5em 0.5em -0.3em #a7f0f5;
-    background-color: #12333f
+    background-color: #173641
 }
