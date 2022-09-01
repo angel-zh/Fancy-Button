@@ -15,10 +15,12 @@ function generateGradient() {
   const randomGradient = `linear-gradient(to bottom, ${firstColor}, ${secondColor})`
   document.body.style.background = randomGradient;
   firstColorText.innerText = firstColor;
-  firstColorText.style.background = "rgba(255,255,255,.4)";
+  firstColorText.style.color = firstColor;
+  firstColorText.style.background = "rgba(255,255,255,.7)";
   firstColorText.style.padding = "8px 8px 5px 8px";
   secondColorText.innerText = secondColor;
-  secondColorText.style.background = "rgba(255,255,255,.4)";
+  secondColorText.style.color = secondColor;
+  secondColorText.style.background = "rgba(255,255,255,.7)";
   secondColorText.style.padding = "8px 8px 5px 8px";
 }
 
